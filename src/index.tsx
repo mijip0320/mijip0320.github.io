@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./locales"; // 저희가 설정한 locales를 import 해주면 끝!
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

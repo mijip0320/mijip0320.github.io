@@ -1,0 +1,106 @@
+.body {
+  padding-top: 25px;
+  &_intro {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &_left {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    &_title{
+        color: var(--primary-color);
+        font-family: var(--secondary-font);
+        font-size: 45px;
+        font-weight: 700;
+        width: 70%;
+    }
+    &_subtitle{
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 25px;
+    padding-top: 10px;
+    width: 70%;
+    }
+  }
+  &_right{
+    align-items: center;
+    display: flex;
+    &_imageContainer {
+            height: 370px;
+    width: 370px;
+    }
+    &_imageWrapper {
+        border-radius: 10%;
+    overflow: hidden;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    }
+    &_image{
+        width : 390px;
+ height : 390px;
+    }
+  }
+
+  &_socials{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding-top: 30px;
+  }
+
+  &_projects{
+    padding-top : 40px;
+    &_list{
+      align-items: stretch;
+      display: flex;
+      flex-wrap: wrap;
+      //margin-left: -35px;
+      margin-right: -35px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    &_project {
+      box-sizing: border-box;
+      overflow: hidden;
+      padding: 10px;
+      width: 33%;
+      border-radius: 4px;
+      &:hover{
+      background: #fafafa;
+      opacity: 1;
+      transition: background-color .3s ease-in-out;
+    }
+    }
+    
+
+  }
+
+  .project {
+    border-radius: 20px;
+    height: 100%;
+    mix-blend-mode: normal;
+    &:hover{
+      background: #fafafa;
+      opacity: 1;
+      transition: background-color .3s ease-in-out;
+    }
+
+    &_title {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding-top: 15px;
+  }
+
+  &_description {
+        color: var(--secondary-color);
+  }
+        
+  }
+}
